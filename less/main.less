@@ -1,41 +1,78 @@
 body {
   font-size: 62.5%;
   font-family: 'Saira', sans-serif;
+  background: @color-dark-blue;
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background: @color-dark-grey;
   color: @color-snow;
   padding: 1rem;
+
+  .nav-links {
+    display: inline-block;
+  }
+}
+button {
+  background: @color-mandarin;
+  color: @color-snow;
+  border: none;
+  border-radius: 5%;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  transition: 0.3s;
+
+  &:hover {
+    background: @color-snow;
+    color: @color-mandarin;
+  }
 }
 
 a {
   text-decoration: none;
   color: black;
-  display: inline-block;
+  display: inline;
+  margin-right: 1rem;
   color: @color-snow;
-  margin-right: 0.5rem;
+
+  &:hover {
+    color: @color-mandarin;
+  }
 }
 
 .logo {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-.logo i {
-  font-size: 4rem;
-  margin-right: 0.4rem;
-  display: inline-block;
+
+  .logo i {
+    font-size: 4rem;
+    margin-right: 0.4rem;
+    display: inline-block;
+  }
 }
 
 .nav-links {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 300;
   display: flex;
   align-content: center;
   justify-content: center;
+}
+
+.main-body {
+  font-size: 1.5rem;
+  color: @color-snow;
+}
+
+.container {
+  max-width: 80rem;
+  background: purple;
+  margin: 0 auto;
 }
