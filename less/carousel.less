@@ -1,0 +1,87 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 80rem;
+  margin: 0 auto;
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+    &:first-child {
+      background: url('../img/playingCard.jpg') no-repeat center center/cover;
+    }
+    &:nth-child(2) {
+      background: url('../img/boardGameDragon.jpg') no-repeat center
+        center/cover;
+    }
+  }
+
+  .slide.current {
+    opacity: 1;
+  }
+
+  .slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -400px;
+    width: 400px;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.8);
+    color: @color-dark-grey;
+    padding: 3.5rem;
+  }
+
+  .slide .content h1 {
+    margin-bottom: 1rem;
+  }
+
+  .slide.current .content {
+    opacity: 1;
+    transform: translateX(400px);
+    transition: all 0.7s ease-in-out 0.3s;
+  }
+
+  @media (max-width: 500px) {
+    .slide .content {
+      bottom: -200px;
+      left: 0;
+      width: 100%;
+    }
+    .slide.current .content {
+      transform: translateY(-300px);
+    }
+  }
+}
+
+button#next {
+  position: absolute;
+  top: 50%;
+  right: 20rem;
+}
+
+button#prev {
+  position: absolute;
+  top: 50%;
+  left: 20rem;
+}
+
+.arrows button {
+  border: none;
+  background-color: transparent;
+  color: @color-snow;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1.3rem 1.5rem;
+  outline: none;
+
+  &:hover {
+    color: @color-mandarin;
+  }
+}
