@@ -220,7 +220,7 @@ a:hover {
 }
 .carousel .slide .content {
   position: absolute;
-  bottom: 70px;
+  bottom: 0px;
   left: -400px;
   width: 400px;
   opacity: 0;
@@ -248,12 +248,12 @@ a:hover {
 }
 button#next {
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: 20rem;
 }
 button#prev {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 20rem;
 }
 .arrows button {
