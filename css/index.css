@@ -142,27 +142,36 @@ body {
   justify-content: space-evenly;
 }
 .card,
-.about {
+.about,
+.signup {
   text-align: center;
   margin-bottom: 6rem;
 }
 .card i,
-.about i {
+.about i,
+.signup i {
   font-size: 3rem;
   color: #45617a;
   margin: 1rem;
 }
 .card h2,
-.about h2 {
+.about h2,
+.signup h2 {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 3rem;
 }
 .card p,
-.about p {
+.about p,
+.signup p {
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 300;
+  margin-bottom: 2rem;
+}
+hr {
+  border: 0.5px solid #45617a;
+  max-width: 80rem;
 }
 nav {
   display: flex;
@@ -175,7 +184,10 @@ nav {
 nav .nav-links {
   display: inline-block;
 }
-nav button {
+nav .logo img {
+  width: 80%;
+}
+.button {
   background: #f37748;
   color: #d7dbdd;
   border: none;
@@ -185,10 +197,10 @@ nav button {
   font-weight: 500;
   transition: 0.3s;
 }
-nav button:active {
+.button:active {
   transform: translateY(2px);
 }
-nav button:hover {
+.button:hover {
   background: #dd6d42;
   cursor: pointer;
 }
@@ -225,7 +237,7 @@ a:hover {
 .carousel {
   position: relative;
   overflow: hidden;
-  height: 50vh;
+  height: 60vh;
   width: 100vw;
   margin: 0 auto 2rem auto;
 }
@@ -240,9 +252,11 @@ a:hover {
 }
 .carousel .slide:first-child {
   background: url('../img/playingCard.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
 }
 .carousel .slide:nth-child(2) {
   background: url('../img/boardGameDragon.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
 }
 .carousel .slide.current {
   opacity: 1;
@@ -277,12 +291,12 @@ a:hover {
 }
 button#next {
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 2rem;
 }
 button#prev {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 2rem;
 }
 .arrows button {

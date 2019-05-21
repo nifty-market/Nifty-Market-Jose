@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
   overflow: hidden;
-  height: 50vh;
+  height: 60vh;
   width: 100vw;
   margin: 0 auto 2rem auto;
 
@@ -16,10 +16,12 @@
 
     &:first-child {
       background: url('../img/playingCard.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
     }
     &:nth-child(2) {
       background: url('../img/boardGameDragon.jpg') no-repeat center
         center/cover;
+      background-attachment: fixed;
     }
   }
 
@@ -62,13 +64,13 @@
 
 button#next {
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 2rem;
 }
 
 button#prev {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 2rem;
 }
 
