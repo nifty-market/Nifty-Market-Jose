@@ -180,10 +180,25 @@ form {
 form input[type='text'],
 form input[type='email'],
 form input[type='password'] {
+  font-size: 1.2rem;
+  color: #202b31;
   background: #d7dbdd;
   width: 40%;
   height: 2rem;
   margin: 0.3rem 0 1rem 0;
+}
+form input[type='text']:focus,
+form input[type='email']:focus,
+form input[type='password']:focus {
+  border: 3px solid #f37748;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #202b31;
+  color: #d7dbdd;
+  height: 5rem;
+  font-size: 1.2rem;
 }
 nav {
   display: flex;
