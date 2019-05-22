@@ -6,7 +6,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: @color-dark-grey;
+  background-image: linear-gradient(to bottom, black, @color-dark-grey);
   color: @color-snow;
   padding: 1rem;
 
@@ -19,29 +19,9 @@ nav {
   }
 }
 
-.button {
-  background: @color-mandarin;
-  color: @color-snow;
-  border: none;
-  border-radius: 5%;
-  font-size: 1rem;
-  padding: 1rem 1.5rem;
-  font-weight: 500;
-  transition: 0.3s;
-
-  &:active {
-    transform: translateY(2px);
-  }
-
-  &:hover {
-    background: @color-dark-mandarin;
-    cursor: pointer;
-  }
-}
-
 a {
   text-decoration: none;
-  color: black;
+  text-transform: capitalize;
   display: inline;
   margin-right: 1rem;
   color: @color-snow;
@@ -52,22 +32,8 @@ a {
   }
 }
 
-.logo {
-  font-size: 2rem;
-  font-weight: 300;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  .logo i {
-    font-size: 4rem;
-    margin-right: 0.4rem;
-    display: inline-block;
-  }
-}
-
 .nav-links {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
   display: flex;
   align-content: center;

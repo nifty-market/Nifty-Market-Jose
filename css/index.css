@@ -130,7 +130,51 @@ body {
   font-size: 62.5%;
   color: #d7dbdd;
   font-family: 'Saira', sans-serif;
-  background: #002649;
+  background-image: linear-gradient(to bottom, #45617a, #002649);
+}
+button,
+.button {
+  font-family: 'Saira', sans-serif;
+  font-size: 1.2rem;
+  background: #f37748;
+  color: #d7dbdd;
+  border: none;
+  padding: 0.4rem 1.4rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+button:active,
+.button:active {
+  transform: translateY(2px);
+}
+button:hover,
+.button:hover {
+  background: #dd6d42;
+  cursor: pointer;
+}
+.button-signup {
+  background: transparent;
+  color: #d7dbdd;
+  padding: 0.4rem 1rem;
+  border: 1px solid #d7dbdd;
+  margin-right: 0.5rem;
+}
+.button-signup:hover {
+  background: #f37748;
+  color: #d7dbdd;
+  border: none;
+  cursor: pointer;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 2rem;
 }
 .container {
   max-width: 80rem;
@@ -151,31 +195,16 @@ body {
 .about i,
 .signup i {
   font-size: 3rem;
-  color: #45617a;
+  color: #247ba0;
   margin: 1rem;
 }
-.card h2,
-.about h2,
-.signup h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 3rem;
-}
-.card p,
-.about p,
-.signup p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-weight: 300;
-  margin-bottom: 2rem;
-}
 hr {
-  border: 0.5px solid #45617a;
+  border: 0.5px solid #247ba0;
   max-width: 80rem;
 }
 form {
   font-size: 1.2rem;
-  color: #45617a;
+  color: #247ba0;
 }
 form input[type='text'],
 form input[type='email'],
@@ -190,21 +219,33 @@ form input[type='password'] {
 form input[type='text']:focus,
 form input[type='email']:focus,
 form input[type='password']:focus {
-  border: 3px solid #f37748;
+  border: 2px solid #f37748;
+}
+form .button {
+  width: 40%;
+  border-radius: 0;
+  margin-right: 0.5rem;
 }
 footer {
   text-align: center;
   padding: 1rem;
-  background: #202b31;
+  background-image: linear-gradient(to bottom, black, #202b31);
   color: #d7dbdd;
   height: 5rem;
   font-size: 1.2rem;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer a {
+  text-transform: initial;
 }
 nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: #202b31;
+  background-image: linear-gradient(to bottom, black, #202b31);
   color: #d7dbdd;
   padding: 1rem;
 }
@@ -214,26 +255,9 @@ nav .nav-links {
 nav .logo img {
   width: 80%;
 }
-.button {
-  background: #f37748;
-  color: #d7dbdd;
-  border: none;
-  border-radius: 5%;
-  font-size: 1rem;
-  padding: 1rem 1.5rem;
-  font-weight: 500;
-  transition: 0.3s;
-}
-.button:active {
-  transform: translateY(2px);
-}
-.button:hover {
-  background: #dd6d42;
-  cursor: pointer;
-}
 a {
   text-decoration: none;
-  color: black;
+  text-transform: capitalize;
   display: inline;
   margin-right: 1rem;
   color: #d7dbdd;
@@ -242,20 +266,8 @@ a {
 a:hover {
   color: #f37748;
 }
-.logo {
-  font-size: 2rem;
-  font-weight: 300;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.logo .logo i {
-  font-size: 4rem;
-  margin-right: 0.4rem;
-  display: inline-block;
-}
 .nav-links {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
   display: flex;
   align-content: center;
@@ -278,11 +290,15 @@ a:hover {
   transition: opacity 0.4s ease-in-out;
 }
 .carousel .slide:first-child {
-  background: url('../img/playingCard.jpg') no-repeat center center / cover;
+  background: url('../img/community.jpg') no-repeat center center / cover;
   background-attachment: fixed;
 }
 .carousel .slide:nth-child(2) {
   background: url('../img/boardGameDragon.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
+}
+.carousel .slide:nth-child(3) {
+  background: url('../img/playingCard.jpg') no-repeat center center / cover;
   background-attachment: fixed;
 }
 .carousel .slide.current {

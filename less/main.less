@@ -2,7 +2,59 @@ body {
   font-size: 62.5%;
   color: @color-snow;
   font-family: 'Saira', sans-serif;
-  background: @color-dark-blue;
+  background-image: linear-gradient(
+    to bottom,
+    @color-med-blue,
+    @color-dark-blue
+  );
+}
+
+button,
+.button {
+  font-family: 'Saira', sans-serif;
+  font-size: 1.2rem;
+  background: @color-mandarin;
+  color: @color-snow;
+  border: none;
+  padding: 0.4rem 1.4rem;
+  font-weight: 500;
+  transition: 0.3s;
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &:hover {
+    background: @color-dark-mandarin;
+    cursor: pointer;
+  }
+}
+
+.button-signup {
+  background: transparent;
+  color: @color-snow;
+  padding: 0.4rem 1rem;
+  border: 1px solid @color-snow;
+  margin-right: 0.5rem;
+
+  &:hover {
+    background: @color-mandarin;
+    color: @color-snow;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -22,30 +74,19 @@ body {
   margin-bottom: 6rem;
   i {
     font-size: 3rem;
-    color: @color-med-blue;
+    color: @color-light-blue;
     margin: 1rem;
-  }
-  h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-  }
-  p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: 300;
-    margin-bottom: 2rem;
   }
 }
 
 hr {
-  border: 0.5px solid @color-med-blue;
+  border: 0.5px solid @color-light-blue;
   max-width: 80rem;
 }
 
 form {
   font-size: 1.2rem;
-  color: @color-med-blue;
+  color: @color-light-blue;
 
   input[type='text'],
   input[type='email'],
@@ -61,15 +102,28 @@ form {
   input[type='text']:focus,
   input[type='email']:focus,
   input[type='password']:focus {
-    border: 3px solid @color-mandarin;
+    border: 2px solid @color-mandarin;
+  }
+  .button {
+    width: 40%;
+    border-radius: 0;
+    margin-right: 0.5rem;
   }
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: @color-dark-grey;
+  background-image: linear-gradient(to bottom, black, @color-dark-grey);
   color: @color-snow;
   height: 5rem;
   font-size: 1.2rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    text-transform: initial;
+  }
 }
