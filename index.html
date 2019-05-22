@@ -17,16 +17,17 @@
     <title>Nifty Markets</title>
   </head>
   <body>
-    <nav>      
+    <nav id="navbar">      
         <div class="logo">
-          <img src="img/NMLogoWhite.png" alt="logo">
+          <a href="#"><img src="img/NMLogoWhite.png" alt="logo"></a>
         </div>        
       </div>
 
       <div class="nav-links">
-        <a href="#">Store</a>
-        <a href="#">contact</a>
-        <a href="#">about us</a>
+        <a href="#navbar">Home</a>
+        <a href="#aboutUs">Nifty Markets</a>
+        <a href="about.html">About Us</a>
+        <a href="#signup">Join Now</a>
       </div>
       <div class="btn-container">
         <button class="button button-signup" >
@@ -38,14 +39,14 @@
       </div>
     </nav>
 
-    <section class="carousel">
+    <section class="carousel" id="carousel" >
       <div class="slide current">
         <div class="content">
           <h1>Start Today!</h1>
           <p>
             Join the community! enroll now!
           </p>
-          <button>Sign Up</button>          
+          <button class="button">Sign Up</button>          
         </div>
       </div>
       <div class="slide">
@@ -70,10 +71,10 @@
     <div class="arrows">
       <button id="prev"><i class="fas fa-chevron-left"></i></button>
       <button id="next"><i class="fas fa-chevron-right"></i></button>
-    </div>
-    <section class="about container">
+    </div> 
+    <section id="niftyMarkets" class="about container">
       <i class="fas fa-gamepad"></i>
-      <h2>Who Are We?</h2>
+      <h2>Nifty Markets</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
         voluptate aperiam, ipsum eligendi impedit blanditiis! Totam at omnis,
@@ -111,7 +112,7 @@
       </div>        
     </section>
     <hr>
-    <section class="signup container">
+    <section id="signup" class="signup container">
       <i class="fas fa-user-plus"></i>
       <h2>Join The Community</h2>
       <div class="form-container">     
@@ -142,6 +143,12 @@
       <p>Like The Logo? <br> Contact: <a href="#">Kimberly Swinton</a></p>     
       </div>
 
+    <div class="nav-links">
+      <a href="#carousel">Home</a>
+      <a href="#aboutUs">Nifty Markets</a>
+      <a href="about.html">About Us</a>
+      <a href="#signup">Join Now</a>
+    </div>
 
       <p>&copy;copyright 2019 <br>
       All Rights Reserved</p>
@@ -150,6 +157,6 @@
     
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>    
   </body>
 </html>
