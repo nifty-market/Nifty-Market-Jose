@@ -54,8 +54,10 @@ footer {
       padding: 0.4rem 0.5rem;
     }
   }
+}
 
-  @media (max-width: 800px) {
+@media (max-width: 800px) {
+  nav {
     flex-direction: column;
     .logo {
       text-align: center;
@@ -63,6 +65,11 @@ footer {
     }
     .nav-links {
       margin-bottom: 1rem;
+    }
+  }
+  footer {
+    .nav-links {
+      display: none;
     }
   }
 }

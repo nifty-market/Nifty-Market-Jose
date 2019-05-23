@@ -187,18 +187,18 @@ footer .nav-links {
   }
 }
 @media (max-width: 800px) {
-  nav,
-  footer {
+  nav {
     flex-direction: column;
   }
-  nav .logo,
-  footer .logo {
+  nav .logo {
     text-align: center;
     margin-bottom: 1rem;
   }
-  nav .nav-links,
-  footer .nav-links {
+  nav .nav-links {
     margin-bottom: 1rem;
+  }
+  footer .nav-links {
+    display: none;
   }
 }
 html {
@@ -292,6 +292,12 @@ p {
   .card p,
   .about p,
   .signup p {
+    margin: 0 2rem;
+    font-size: 1rem;
+  }
+  .card .form-container,
+  .about .form-container,
+  .signup .form-container {
     font-size: 1rem;
   }
 }
@@ -337,6 +343,11 @@ footer .container {
 }
 footer a {
   text-transform: initial;
+}
+@media (max-width: 500px) {
+  .content-cards {
+    flex-direction: column;
+  }
 }
 .carousel {
   position: relative;
@@ -413,6 +424,24 @@ footer a {
     font-size: 1rem;
   }
 }
+@media (max-width: 1000px) {
+  .carousel {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  .carousel i {
+    font-size: 2rem;
+  }
+  .carousel h2 {
+    font-size: 1.2rem;
+  }
+  .carousel p {
+    font-size: 1rem;
+  }
+  .carousel .button {
+    font-size: 1rem;
+  }
+}
 button#next {
   position: absolute;
   top: 40%;
@@ -445,7 +474,19 @@ button#prev {
 .contact-team img {
   border-radius: 50%;
   width: 10rem;
+  margin-bottom: 1rem;
 }
 .contact-team .row {
   display: flex;
+}
+#textarea {
+  background: #d7dbdd;
+  height: 3rem;
+  width: 40%;
+  margin-top: 0.3rem;
+}
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
 }
