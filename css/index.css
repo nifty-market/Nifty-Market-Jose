@@ -241,6 +241,20 @@ footer .container {
 footer a {
   text-transform: initial;
 }
+.contact-team .team {
+  text-align: center;
+}
+.contact-team .team-members {
+  display: flex;
+  flex-direction: column;
+}
+.contact-team img {
+  border-radius: 50%;
+  width: 10rem;
+}
+.contact-team .row {
+  display: flex;
+}
 nav {
   display: flex;
   position: sticky;
