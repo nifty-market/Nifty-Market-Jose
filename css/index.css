@@ -138,8 +138,8 @@ footer {
   color: #d7dbdd;
   padding: 1rem;
 }
-nav .nav-links,
-footer .nav-links {
+nav .nav-links a,
+footer .nav-links a {
   display: inline-block;
 }
 nav .logo img,
@@ -178,8 +178,8 @@ footer .nav-links {
   }
   nav .button,
   footer .button,
-  nav .button-sigup,
-  footer .button-sigup,
+  nav .button-signup,
+  footer .button-signup,
   nav p,
   footer p {
     font-size: 1rem;
@@ -274,31 +274,19 @@ p {
   margin: 1rem;
 }
 @media (max-width: 1000px) {
-  .card,
-  .about,
-  .signup {
-    margin-bottom: 3rem;
-  }
-  .card i,
-  .about i,
-  .signup i {
+  margin-bottom: 3rem;
+  i {
     font-size: 2rem;
   }
-  .card h2,
-  .about h2,
-  .signup h2 {
+  h2 {
     font-size: 1.2rem;
   }
-  .card p,
-  .about p,
-  .signup p {
+  p {
     margin: 0 2rem;
     font-size: 1rem;
   }
-  .card .form-container,
-  .about .form-container,
-  .signup .form-container {
-    font-size: 1rem;
+  span {
+    font-size: 1.2rem;
   }
 }
 hr {
@@ -378,6 +366,14 @@ footer a {
   background: url('../img/playingCard.jpg') no-repeat center center / cover;
   background-attachment: fixed;
 }
+.carousel .slide:nth-child(4) {
+  background: url('../img/videoGame.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
+}
+.carousel .slide:nth-child(5) {
+  background: url('../img/nintendoCard.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
+}
 .carousel .slide.current {
   opacity: 1;
 }
@@ -393,7 +389,7 @@ footer a {
 }
 .carousel .slide .content h2,
 .carousel p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .carousel .slide.current .content {
   opacity: 1;
@@ -451,6 +447,18 @@ button#prev {
   position: absolute;
   top: 40%;
   left: 2rem;
+}
+@media (max-width: 500px) {
+  button#next {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+  }
+  button#prev {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+  }
 }
 .arrows button {
   border: none;

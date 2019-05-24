@@ -28,6 +28,14 @@
       background: url('../img/playingCard.jpg') no-repeat center center/cover;
       background-attachment: fixed;
     }
+    &:nth-child(4) {
+      background: url('../img/videoGame.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+    }
+    &:nth-child(5) {
+      background: url('../img/nintendoCard.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+    }
   }
 
   .slide.current {
@@ -47,7 +55,7 @@
 
   .slide .content h2,
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .slide.current .content {
@@ -111,6 +119,20 @@ button#prev {
   position: absolute;
   top: 40%;
   left: 2rem;
+}
+
+@media (max-width: 500px) {
+  button#next {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+  }
+
+  button#prev {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+  }
 }
 
 .arrows button {
