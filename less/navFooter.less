@@ -10,8 +10,9 @@ footer {
   color: @color-snow;
   padding: 1rem;
 
-  .nav-links a {
-    display: inline-block;
+  .btn-container a,
+  .btn-container a:hover {
+    color: @color-snow;
   }
 
   .logo img {
@@ -39,9 +40,28 @@ footer {
     justify-content: center;
   }
 
+  @media (max-width: 1100px) {
+    .logo img {
+      width: 70%;
+    }
+
+    a {
+      font-size: 1.2rem;
+    }
+    .button,
+    .button-signup,
+    p {
+      font-size: 1.2rem;
+      padding: 0.4rem 0.5rem;
+    }
+  }
   @media (max-width: 1000px) {
     .logo img {
-      width: 60%;
+      width: 50%;
+    }
+    .btn-container {
+      // background: red;
+      display: flex;
     }
 
     a {
@@ -56,7 +76,7 @@ footer {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   nav {
     flex-direction: column;
     .logo {
@@ -73,28 +93,3 @@ footer {
     }
   }
 }
-
-// @media (max-width: 500px) {
-//   nav {
-//     position: initial;
-//     .nav-links {
-//       display: flex;
-//       flex-direction: column;
-//     }
-//     a {
-//       margin-bottom: 1.2rem;
-//       font-size: 1.1rem;
-//     }
-//     .logo img {
-//       width: 80%;
-//     }
-
-//     .button,
-//     .button-signup {
-//       font-size: 1rem;
-//       display: block;
-//       margin: 0 6rem 1rem 0;
-//       width: 100%;
-//     }
-//   }
-// }

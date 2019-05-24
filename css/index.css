@@ -138,9 +138,11 @@ footer {
   color: #d7dbdd;
   padding: 1rem;
 }
-nav .nav-links a,
-footer .nav-links a {
-  display: inline-block;
+nav .btn-container a,
+footer .btn-container a,
+nav .btn-container a:hover,
+footer .btn-container a:hover {
+  color: #d7dbdd;
 }
 nav .logo img,
 footer .logo img {
@@ -167,10 +169,33 @@ footer .nav-links {
   align-content: center;
   justify-content: center;
 }
+@media (max-width: 1100px) {
+  nav .logo img,
+  footer .logo img {
+    width: 70%;
+  }
+  nav a,
+  footer a {
+    font-size: 1.2rem;
+  }
+  nav .button,
+  footer .button,
+  nav .button-signup,
+  footer .button-signup,
+  nav p,
+  footer p {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
 @media (max-width: 1000px) {
   nav .logo img,
   footer .logo img {
-    width: 60%;
+    width: 50%;
+  }
+  nav .btn-container,
+  footer .btn-container {
+    display: flex;
   }
   nav a,
   footer a {
@@ -186,7 +211,7 @@ footer .nav-links {
     padding: 0.4rem 0.5rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   nav {
     flex-direction: column;
   }
@@ -210,6 +235,10 @@ body {
   font-family: 'Saira', sans-serif;
   background-image: linear-gradient(to bottom, #45617a, #002649);
 }
+a,
+a:hover {
+  color: #d7dbdd;
+}
 .button {
   font-family: 'Saira', sans-serif;
   font-size: 1.2rem;
@@ -225,6 +254,7 @@ body {
 }
 .button:hover {
   background: #dd6d42;
+  color: #d7dbdd;
   cursor: pointer;
 }
 .button-signup {
@@ -232,7 +262,7 @@ body {
   color: #d7dbdd;
   padding: 0.4rem 1rem;
   border: 1px solid #d7dbdd;
-  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .button-signup:hover {
   background: #f37748;
@@ -472,8 +502,14 @@ button#prev {
 .arrows button:hover {
   color: #f37748;
 }
+.contact-team .card h2 {
+  margin-bottom: 0;
+}
 .contact-team .team {
   text-align: center;
+}
+.contact-team .fa-github:hover {
+  color: #202b31;
 }
 .contact-team .team-members {
   display: flex;
@@ -486,6 +522,7 @@ button#prev {
 }
 .contact-team .row {
   display: flex;
+  justify-content: space-evenly;
 }
 #textarea {
   background: #d7dbdd;
@@ -493,7 +530,7 @@ button#prev {
   width: 40%;
   margin-top: 0.3rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .row {
     flex-direction: column;
   }
